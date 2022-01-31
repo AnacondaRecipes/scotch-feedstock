@@ -20,6 +20,11 @@ build:
   skip: true  # [win]
   number: {{ build }}
 
+requirements:
+  build:
+    - patch     # [not win]
+    - m2-patch  # [win]
+
 outputs:
   - name: scotch
     build:
